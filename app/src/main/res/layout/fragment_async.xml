@@ -1,23 +1,23 @@
 <RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/ikaFragmentAsync"
     android:layout_width="match_parent"
-    android:layout_height="match_parent"
+    android:layout_height="wrap_content"
     tools:context="labs.ika.speechtotext.AsyncFragment">
 
     <!-- TODO: Update blank fragment layout -->
-
     <TextView
+        android:id="@+id/myText"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:id="@+id/myText"
-        android:onClick="onTextClick"
-        android:textSize="18sp"
-        android:textColor="@color/primary_text_material_light"
-        android:textAlignment="center"
-        android:text="Welcome! Press MIC to start recording!"
-        android:layout_marginTop="23dp"
         android:layout_alignParentTop="true"
-        android:layout_centerHorizontal="true" />
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="23dp"
+        android:onClick="onTextClick"
+        android:text="Welcome! Press MIC to start recording!"
+        android:textAlignment="center"
+        android:textColor="@color/primary_text_material_light"
+        android:textSize="18sp" />
 
     <ImageButton
         android:id="@+id/imageRecBtn"
@@ -34,5 +34,6 @@
         android:padding="12dp"
         android:scaleType="fitCenter"
         android:src="@mipmap/ic_mic_white_24dp" />
+
 
 </RelativeLayout>

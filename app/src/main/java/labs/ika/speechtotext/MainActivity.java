@@ -24,12 +24,9 @@ public class MainActivity extends AppCompatActivity {
                     return true;
 
                 case R.id.navigation_async:
-                    Fragment fragment_a = new AsyncFragment();
-                    FragmentTransaction transaction = getSupportFragmentManager().beginTransaction();
-                    transaction.replace(R.id.content, fragment_a).commit();
                     setContentView(R.layout.fragment_async);
                     return true;
-                
+
                 case R.id.navigation_settings:
                     mTextMessage.setText(R.string.title_settings);
                     return true;
